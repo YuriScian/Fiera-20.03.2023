@@ -14,7 +14,7 @@ namespace Fiera_20._03._2023
         {
             OpenFileDialog foto = new OpenFileDialog();
 
-            foto.Filter = " yuri | *.jpg ; *.jpeg; *.bmp ; *.png";
+            //foto.Filter = " yuri | *.jpg ; *.jpeg; *.bmp ; *.png";
 
             foto.ShowDialog();
 
@@ -30,8 +30,8 @@ namespace Fiera_20._03._2023
 
                     destinazione = Color.FromArgb(255, (int)(matteo.R * trbRed.Value), (int)(matteo.G * trbGreen.Value), (int)(matteo.B * trbBlue.Value));
 
-
                     bmp.SetPixel(x, y, destinazione);
+                    
                 }
             }
 
